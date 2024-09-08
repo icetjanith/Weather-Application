@@ -1,0 +1,202 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+}
+
+.header{
+  background-image: url("1.svg");
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  color: white;
+  position: relative; /* Allows for better positioning of text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-container {
+  z-index: 2; /* Ensures text appears above the background */
+  position: absolute;
+  bottom: 46%;
+}
+
+.searchBox{
+  position: absolute;
+  bottom: 35%;
+  max-width: 35%;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-title {
+  font-size: 3.5rem; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+.navbar {
+  
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  position: fixed;
+  z-index: 1000;
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+.nav-link , .navbar-brand{
+  color:black;
+  
+}
+
+.weather-card{
+  display: flex;
+  background-color:#748bf1;
+  justify-content: space-between;
+  border: 2px solid rgb(234, 233, 240);
+  box-shadow: 5px 5px 10px 2px rgb(234, 233, 240);
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+}
+
+.currentWeather_header{
+  display: flex;
+  text-align: center;
+  background-color: rgb(13, 36, 208);
+  color: #ffff;
+  justify-content: center;
+  border-radius: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-top: 2.2rem;
+  margin-bottom: 1.0rem;
+}
+
+.current-weather-info{
+  color: rgb(255, 255, 255);
+  max-width: 50%;
+}
+
+.location{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.heat{
+  font-size: 4.0rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.condition{
+  font-size: 3.0rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.time_card{
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: center;
+  background-color: #748bf1;
+  border: 2px solid rgb(234, 233, 240);
+  box-shadow: 5px 5px 10px 2px rgb(234, 233, 240);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  height: 100%;
+}
+
+.sunrise{
+  margin-top: 1.0rem;
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.localTime{
+  font-size: 4.0rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1.5rem;
+}
+
+.sunset{
+  margin-top: 1.5rem;
+  margin-bottom: 1.1rem;
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.forecast{
+  display: flex;
+  text-align: center;
+  background-color: rgb(13, 36, 208);
+  color: #ffff;
+  justify-content: center;
+  border-radius: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-top: 2.4rem;
+  margin-bottom: 1.0rem;
+}
+
+.tempCard{
+  display: grid;
+  grid-template-columns: auto;
+  color: rgb(255, 255, 255);
+  border: 2px solid white;
+  box-shadow: 5px 5px 10px 2px rgb(234, 233, 240);
+  justify-content: center;
+  text-align: center;
+  background-color: #748bf1;
+}
+
+.tempHead{
+  margin-top: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.0rem;
+  font-weight: 600;
+}
+
+.temp{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.mapText{
+  display: flex;
+  text-align: center;
+  background-color: rgb(13, 36, 208);
+  color: #ffff;
+  justify-content: center;
+  border-radius: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-top: 2.4rem;
+  margin-bottom: 1.0rem;
+}

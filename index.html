@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Application</title>
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="assests/css/style.css">
+  <link rel="stylesheet" href="assests/css/style-media.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item d-flex justify-content-center">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item d-flex justify-content-center">
+            <a class="nav-link" href="#current">Current</a>
+          </li>
+          <li class="nav-item d-flex justify-content-center">
+            <a class="nav-link" href="#">Forecast</a>
+          </li>
+          <li class="nav-item d-flex justify-content-center">
+            <a class="nav-link">Map</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header">
+
+    <div class="text-container">
+      <h1 class="header-title">Discover the weather in</h1>
+      <h1 class="header-title">every city you go</h2>
+    </div>
+
+    <div class="searchBox input-group">
+      <input class="form-control formWidth" type="text" id="searchBox">
+      <button class="btn btn-primary" id="button">Search</button>
+    </div>
+
+  </header>
+
+  <!-------------------------------------------------------------------------------------------------------------------------------------------------->
+  <section id="current" class="mb-5">
+    <div class="container mt-4">
+      <h1 class="currentWeather_header">Current Weather</h1>
+      <div class="row">
+
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+          <div class="weather-card ms-lg-0 rounded-3 ">
+            <div class="ms-xl-5 ms-lg-3 ms-md-5 ms-sm-5 ms-2  mt-auto mb-auto">
+              <img id="currentImg" class="img-fluid" width="200" height="200"
+                src="https://img.icons8.com/emoji/100/sun-behind-large-cloud.png" alt="sun-behind-large-cloud" />
+            </div>
+            <div class="current-weather-info me-xl-5 me-lg-3 me-md-5 me-sm-5 me-2 mt-2 d-grid justify-content-center">
+              <h1 class="location" id="currentLocation">Walasmulla</h1>
+              <p class="heat" id="temp">25°C</p>
+              <p class="condition" id="condition">Cloudy</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+          <div class="time_card me-lg-0 rounded-3 mt-4 mt-lg-0">
+
+            <p class="sunrise" id="sunrise">Sunrise : 12.45 AM</p>
+            <h1 class="localTime" id="localTime">22:40 PM</h1>
+            <p class="sunset" id="sunset">Sunset : 18.20 PM</p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------------------------------------------------------------------------------------------------------------------------------->
+
+  <section>
+    <div class="container mt-5">
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+          <div class="tempCard ms-lg-2 rounded-3">
+
+            <p class="tempHead">Temperature</p>
+            <hr>
+            <p class="temp" id="temperature">25°C</p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+          <div class="tempCard ms-lg-2 rounded-3 me-lg-0 rounded-3 mt-4 mt-lg-0">
+
+            <p class="tempHead">Humidity</p>
+            <hr>
+            <p class="temp" id="humidity">25°C</p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+          <div class="tempCard ms-lg-2 rounded-3 me-lg-0 rounded-3 mt-4 mt-lg-0">
+
+            <p class="tempHead">WindSpeed</p>
+            <hr>
+            <p class="temp" id="windSpeed">25°C</p>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mt-4">
+
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+          <div class="tempCard ms-lg-2 rounded-3">
+
+            <p class="tempHead">Condition</p>
+            <hr>
+            <p class="temp" id="description">25°C</p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+          <div class="tempCard ms-lg-2 rounded-3 me-lg-0 rounded-3 mt-4 mt-lg-0">
+
+            <p class="tempHead">FeelsLike</p>
+            <hr>
+            <p class="temp" id="feelsLike">25°C</p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+          <div class="tempCard ms-lg-2 rounded-3 me-lg-0 rounded-3 mt-4 mt-lg-0">
+
+            <p class="tempHead">Dewpoint</p>
+            <hr>
+            <p class="temp" id="dewPoint">25°C</p>
+
+          </div>
+        </div>
+
+      </div>
+
+
+  </section>
+
+
+  <!--------------------------------------------------------------------------------------------------------------------------------->
+  <section id="forecast">
+    <div class="container mt-5">
+      <h1 class="mapText">Forecast</h1>
+      <div class="row">
+
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+          <div class="tempCard ms-lg-2 rounded-3">
+
+            <p class="tempHead" id="forecastDay1">2024-09-10</p>
+            <hr>
+            <img id="forecastDay1Img" class="img-fluid" width="200" height="200"
+                src="https://img.icons8.com/emoji/100/sun-behind-large-cloud.png" alt="sun-behind-large-cloud" />
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+          <div class="tempCard ms-lg-2 rounded-3">
+
+            <p class="tempHead" id="forecastDay2">2024-09-11</p>
+            <hr>
+            <img id="forecastDay1Img" class="img-fluid" width="200" height="200"
+                src="https://img.icons8.com/emoji/100/sun-behind-large-cloud.png" alt="sun-behind-large-cloud" />
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+          <div class="tempCard ms-lg-2 rounded-3">
+
+            <p class="tempHead" id="forecastDay3">2024-09-12</p>
+            <hr>
+            <img id="forecastDay1Img" class="img-fluid" width="200" height="200"
+                src="https://img.icons8.com/emoji/100/sun-behind-large-cloud.png" alt="sun-behind-large-cloud" />
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!--------------------------------------------------------------------------------------------------------------------------------->
+
+  <section id="map">
+    <div class="container mt-4">
+      <div>
+        <h1 class="mapText">Map</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2042249.8003280691!2d103.84425004999999!3d1.3140001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssg!4v1724817856296!5m2!1sen!2ssg"
+          width="100%" height="450" style="border: 1px;;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------------------------------------------------------------------------------------------------------------->
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+
+
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 mb-3 m-lg-0 m-md-0 mt-2">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2024 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter" />
+              </svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram" />
+              </svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook" />
+              </svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <!-------------------------------------------------------------------------------------------------------------------------------------->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+  <script src="assests/js/app.js"></script>
+</body>
+
+</html>
