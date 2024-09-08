@@ -5,7 +5,7 @@ async function btnClick() {
     
     let cityName = document.getElementById("searchBox").value;
 
-    const apiUrl = `http://api.weatherapi.com/v1/forecast.json?key=c7fb0e9c8721431388621506242808&q=${cityName}&days=4&aqi=yes&alerts=yes`;
+    const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=c7fb0e9c8721431388621506242808&q=${cityName}&days=4&aqi=yes&alerts=yes`;
 
     try {
         
