@@ -34,6 +34,8 @@ async function btnClick() {
         document.getElementById("forecastDay2").innerHTML=data.forecast.forecastday[2].date;
         document.getElementById("forecastDay3").innerHTML=data.forecast.forecastday[3].date;
         document.getElementById("forecastDay1Img").src="https:"+data.forecast.forecastday[1].day.condition.icon;
+        document.getElementById("forecastDay2Img").src="https:"+data.forecast.forecastday[2].day.condition.icon;
+        document.getElementById("forecastDay3Img").src="https:"+data.forecast.forecastday[3].day.condition.icon;
 
     } catch (error) {
         console.error("Error fetching the weather data:", error);
