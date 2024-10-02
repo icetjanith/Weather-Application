@@ -1,3 +1,10 @@
+async function getIP(){
+    let res = await fetch("https://ipinfo.io/json?token=21379f7a68461c");
+    let data = await res.json();
+    console.log(data.ip);
+}
+
+getIP();
 let cityName=document.getElementById("searchBox").value;
 document.getElementById("button").addEventListener("click",btnClick);
 
