@@ -2,9 +2,9 @@ async function getIPLocation(){
     let res = await fetch("https://ipinfo.io/json?token=21379f7a68461c");
     let data = await res.json();
     console.log(data);
+    cityName = data.city;
     console.log(data.city);
 
-    cityName = data.city;
 
     const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=c7fb0e9c8721431388621506242808&q=${data.city}&days=4&aqi=yes&alerts=yes`;
 
@@ -46,7 +46,7 @@ function changeWeatherDetails(data){
         document.getElementById("dewPoint").innerHTML=data.current.dewpoint_c+"°C";
         document.getElementById("forecastDay1").innerHTML=data.forecast.forecastday[1].date;
         document.getElementById("forecastDay2").innerHTML=data.forecast.forecastday[2].date;
-        document.getElementById("forecastDay3").innerHTML=data.forecast.forecastday[3].date;
+        document.getElementById("forecastDay3").innerHTML=data.forecast.forecastday[4].date;
         document.getElementById("forecastDay1Img").src="https:"+data.forecast.forecastday[1].day.condition.icon;
         document.getElementById("forecastDay2Img").src="https:"+data.forecast.forecastday[2].day.condition.icon;
         document.getElementById("forecastDay3Img").src="https:"+data.forecast.forecastday[3].day.condition.icon;
