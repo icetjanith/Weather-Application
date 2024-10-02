@@ -2,6 +2,8 @@
 
 This is a simple weather application that provides real-time weather information for a user's location based on their IP address. Users can also search for the weather in other cities by entering the city name in the search bar. The application uses the IPInfo API to detect the user's location and the WeatherAPI service to fetch weather details.
 
+## Screenshots
+
 ## Features
 - Automatically detects user's city based on their IP address.
 - Displays weather forecast for the detected city.
@@ -16,10 +18,9 @@ This is a simple weather application that provides real-time weather information
 - **Bootstrap**: For responsive design and UI components (optional).
   
 
-### Prerequisites
-- A modern web browser.
-- An API key from [WeatherAPI](https://www.weatherapi.com/).
-- An API token from [IPInfo](https://ipinfo.io/).
+## APIs Used
+IPInfo API: ipinfo.io - For getting the user's location based on IP address.
+WeatherAPI: weatherapi.com - For fetching weather data based on location.
 
 ### Setup
 1. Clone this repository to your local machine:
