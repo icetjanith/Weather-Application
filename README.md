@@ -19,7 +19,8 @@ This is a simple weather application that provides real-time weather information
   
 
 ## APIs Used
-IPInfo API: ipinfo.io - For getting the user's location based on IP address.
+IPInfo API: [WeatherAPI](https://www.weatherapi.com/) - For getting the user's location based on IP address.
+
 WeatherAPI: weatherapi.com - For fetching weather data based on location.
 
 ### Setup
