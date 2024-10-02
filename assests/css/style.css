@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 body{
   margin: 0;
   padding: 0;
@@ -45,12 +46,12 @@ body{
   display: flex;
   justify-content: center;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .header-title {
   font-size: 3.5rem; 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin: 0;
 }
@@ -58,7 +59,7 @@ body{
 .navbar {
   
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   position: fixed;
   z-index: 1000;
@@ -80,6 +81,7 @@ body{
   flex-wrap: wrap;
   justify-content: center;
   height: 100%;
+  box-shadow: #748bf1 0px 5px 15px;
 }
 
 .currentWeather_header{
@@ -89,10 +91,11 @@ body{
   color: #ffff;
   justify-content: center;
   border-radius: 0.5rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin-top: 2.2rem;
   margin-bottom: 1.0rem;
+  box-shadow: rgb(13, 36, 208) 0px 3px 8px;
 }
 
 .current-weather-info{
@@ -105,7 +108,7 @@ body{
   text-align: center;
   justify-content: center;
   font-size: 2.5rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin-top: 1rem;
 }
@@ -121,7 +124,7 @@ body{
 
 .condition{
   font-size: 3.0rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
@@ -141,19 +144,20 @@ body{
   color: rgb(255, 255, 255);
   text-align: center;
   height: 100%;
+  box-shadow: #748bf1 0px 5px 15px;
 }
 
 .sunrise{
   margin-top: 1.0rem;
   font-size: 2.5rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 
 .localTime{
   font-size: 4.0rem;
   font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 1.5rem;
 }
 
@@ -161,7 +165,7 @@ body{
   margin-top: 1.5rem;
   margin-bottom: 1.1rem;
   font-size: 2.5rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 
@@ -172,10 +176,11 @@ body{
   color: #ffff;
   justify-content: center;
   border-radius: 0.5rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin-top: 2.4rem;
   margin-bottom: 1.0rem;
+  box-shadow: rgb(13, 36, 208) 0px 3px 8px;
 }
 
 .tempCard{
@@ -187,17 +192,18 @@ body{
   justify-content: center;
   text-align: center;
   background-color: #748bf1;
+  box-shadow: #748bf1 0px 5px 15px;
 }
 
 .tempHead{
   margin-top: 25px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 3.0rem;
   font-weight: 600;
 }
 
 .temp{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 3.5rem;
   font-weight: 600;
 }
@@ -209,8 +215,9 @@ body{
   color: #ffff;
   justify-content: center;
   border-radius: 0.5rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin-top: 2.4rem;
   margin-bottom: 1.0rem;
+  box-shadow: rgb(13, 36, 208) 0px 3px 8px;
 }
