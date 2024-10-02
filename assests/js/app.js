@@ -1,27 +1,33 @@
-async function getIP(){
+async function getIPLocation(){
     let res = await fetch("https://ipinfo.io/json?token=21379f7a68461c");
     let data = await res.json();
     console.log(data);
-    console.log(data.country);
-}
+    console.log(data.city);
 
-getIP();
-let cityName=document.getElementById("searchBox").value;
-document.getElementById("button").addEventListener("click",btnClick);
+    cityName = data.city;
 
-async function btnClick() {
-    
-    let cityName = document.getElementById("searchBox").value;
-
-    const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=c7fb0e9c8721431388621506242808&q=${cityName}&days=4&aqi=yes&alerts=yes`;
+    const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=c7fb0e9c8721431388621506242808&q=${data.city}&days=4&aqi=yes&alerts=yes`;
 
     try {
         
         const response = await fetch(apiUrl);
         const data = await response.json();
         console.log(data); 
+        changeWeatherDetails(data);
 
-        document.getElementById("currentLocation").innerHTML=data.location.name;
+    } catch (error) {
+        console.error("Error fetching the weather data:", error);
+    }
+    finally{
+
+    }
+    
+}
+
+getIPLocation();
+
+function changeWeatherDetails(data){
+    document.getElementById("currentLocation").innerHTML=data.location.name;
         document.getElementById("temp").innerHTML=data.current.temp_c+"°C";
         document.getElementById("condition").innerHTML=data.current.condition.text;
         document.getElementById("currentImg").src="https:"+data.current.condition.icon;
@@ -44,8 +50,29 @@ async function btnClick() {
         document.getElementById("forecastDay1Img").src="https:"+data.forecast.forecastday[1].day.condition.icon;
         document.getElementById("forecastDay2Img").src="https:"+data.forecast.forecastday[2].day.condition.icon;
         document.getElementById("forecastDay3Img").src="https:"+data.forecast.forecastday[3].day.condition.icon;
+}
+
+let cityName=document.getElementById("searchBox").value;
+document.getElementById("button").addEventListener("click",btnClick);
+
+async function btnClick() {
+    
+    let cityName = document.getElementById("searchBox").value;
+
+    const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=c7fb0e9c8721431388621506242808&q=${cityName}&days=4&aqi=yes&alerts=yes`;
+
+    document.getElementById("overlay").style.display = "block";
+
+    try {
+        
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        console.log(data); 
+        changeWeatherDetails(data);
 
     } catch (error) {
         console.error("Error fetching the weather data:", error);
+    }finally{
+        document.getElementById("overlay").style.display = "none";
     }
 }
