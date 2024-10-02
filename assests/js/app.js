@@ -3,6 +3,8 @@ document.getElementById("button").addEventListener("click", btnClick);
 
 cityName = '';
 
+
+
 async function getIPLocation() {
     try {
 
@@ -17,7 +19,7 @@ async function getIPLocation() {
     }
 
 
-    const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=c7fb0e9c8721431388621506242808&q=${data.city}&days=5&aqi=yes&alerts=yes`;
+    const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=c7fb0e9c8721431388621506242808&q=${cityName}&days=5&aqi=yes&alerts=yes`;
 
     try {
 
