@@ -4,6 +4,11 @@ This is a simple weather application that provides real-time weather information
 
 ## Screenshots
 
+![Screenshot 2024-10-02 212955](https://github.com/user-attachments/assets/967f7628-fc32-49b4-957c-40bac43dc9b8)
+
+
+![Screenshot 2024-10-02 213059](https://github.com/user-attachments/assets/4ba49bae-ab90-4568-aa47-a6e1f0d5a9d0)
+
 ## Features
 - Automatically detects user's city based on their IP address.
 - Displays weather forecast for the detected city.
