@@ -11,7 +11,7 @@ async function getIPLocation() {
         let res = await fetch("https://ipinfo.io/json?token=21379f7a68461c");
         let data = await res.json();
         console.log(data);
-        cityName.value = data.city;
+        cityName = data.city;
         console.log(data.city);
 
     } catch (error) {

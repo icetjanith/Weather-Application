@@ -26,7 +26,7 @@ body{
   background-position: center;
   height: 95vh;
   color: white;
-  position: relative; /* Allows for better positioning of text */
+  position: relative; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +34,7 @@ body{
 }
 
 .text-container {
-  z-index: 2; /* Ensures text appears above the background */
+  z-index: 2; 
   position: absolute;
   bottom: 46%;
 }
