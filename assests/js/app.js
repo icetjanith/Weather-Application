@@ -1,14 +1,14 @@
-let cityName = document.getElementById("searchBox").value;
 document.getElementById("button").addEventListener("click", btnClick);
 let cityFromIp='London';
 
 async function getIPLocation() {
+    let cityName = document.getElementById("searchBox");
     try {
 
         let res = await fetch("https://ipinfo.io/json?token=21379f7a68461c");
         let data = await res.json();
         console.log(data);
-        cityName = data.city;
+        cityName.value = data.city;
         cityFromIp=data.city;
         console.log(data.city);
 
