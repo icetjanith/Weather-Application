@@ -66,11 +66,11 @@ function changeWeatherDetails(data) {
     document.getElementById("description").innerHTML = data.current.condition.text;
     document.getElementById("feelsLike").innerHTML = data.current.feelslike_c + "°C";
     document.getElementById("dewPoint").innerHTML = data.current.dewpoint_c + "°C";
-    document.getElementById("forecastDay1").innerHTML = data.forecast.forecastday[1].date;
-    document.getElementById("forecastDay2").innerHTML = data.forecast.forecastday[2].date;
+    document.getElementById("forecastDay1").innerHTML = data.forecast.forecastday[0].date;
+    document.getElementById("forecastDay2").innerHTML = data.forecast.forecastday[1].date;
     document.getElementById("forecastDay3").innerHTML = data.forecast.forecastday[2].date;
-    document.getElementById("forecastDay1Img").src = "https:" + data.forecast.forecastday[1].day.condition.icon;
-    document.getElementById("forecastDay2Img").src = "https:" + data.forecast.forecastday[2].day.condition.icon;
+    document.getElementById("forecastDay1Img").src = "https:" + data.forecast.forecastday[0].day.condition.icon;
+    document.getElementById("forecastDay2Img").src = "https:" + data.forecast.forecastday[1].day.condition.icon;
     document.getElementById("forecastDay3Img").src = "https:" + data.forecast.forecastday[2].day.condition.icon;
 }
 
